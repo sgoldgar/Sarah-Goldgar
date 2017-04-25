@@ -1,0 +1,70 @@
+.experience {
+  margin: 5% 0;
+}
+
+.about {
+  padding: 10% 10% 0% 10%;
+}
+
+.container {
+  flex-direction: row;
+  display: inherit;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 6%;
+  flex-wrap: wrap;
+}
+
+.container.offset {
+  margin: 1% 18%;
+  flex-direction: row;
+  display: inherit;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.about h2, .projects h2 {
+  color: #070364;
+  padding-left: 80px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*Circle Links*/
+.image-link img, .circle {
+   position: relative;
+   width: 100%; /* for IE 6 */
+   border-radius: 50%;
+   width: 150px;
+   min-height:150px;
+   margin: 10px 20px;
+}
+
+.image-link img {
+  background: white;
+  border: 5px solid #747A6D;
+}
+
+
+.about .circle a {
+ position: absolute;
+ top: 65px;
+ left: 0;
+ width: 100%;
+ color: #070364;
+ font-size: 110%;
+ font-weight: bolder;
+ text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+  font-size: 120%;
+}
+
+.image-link img:hover {
+  opacity: 0.7;
+}
