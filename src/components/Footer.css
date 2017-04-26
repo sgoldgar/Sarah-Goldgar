@@ -6,7 +6,7 @@ footer {
 }
 
 footer h5, footer a{
-  color: #747A6D;
+  color: darkslategray;
 }
 
 footer ul {
@@ -21,7 +21,7 @@ footer li {
   margin: 5% 1% 0 1%;
   padding: 1%;
   border-radius: 50%;
-  background-color: #EBEBCA;
+  background-color: #FFF5B0;
 }
 
 footer li:hover{

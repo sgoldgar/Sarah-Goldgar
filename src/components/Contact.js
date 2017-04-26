@@ -10,7 +10,7 @@ class Contact extends Component{
           <input type="email" name="contact" value="" placeholder="Email"/>
           <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
         </form>
-        <input type="submit" value="Submit" className="button"/>
+        <input type="submit" value="Get in touch" className="button"/>
       </section>
     )
   }

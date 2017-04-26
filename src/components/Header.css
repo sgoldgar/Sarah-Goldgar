@@ -1,6 +1,6 @@
 /* Nav Bar and Header */
 header{
-  background-color: #EBEBCA;
+  background-color: #FFF5B0;
   flex-direction: row;
   position: fixed;
   width: 100%;
@@ -19,7 +19,7 @@ header{
   height: 70px;
   width: 70px;
   margin: 15% 30%;
-  border: 5px solid #747A6D;
+  border: 5px solid darkslategray;
 }
 
 .tabs{
@@ -37,7 +37,7 @@ nav ul {
   margin: 0 1vw;
   display: flex;
   padding:15px;
-  background-color: #747A6D;
+  background-color: darkslategray;
 }
 
 .navigation-link a {
