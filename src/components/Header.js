@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {IndexLink} from 'react-router';
 import {Link} from 'react-router';
 import './Header.css';
-
+import Ginny from './img/ginny.jpg'
 
 class Header extends Component {
   render() {
@@ -10,7 +10,7 @@ class Header extends Component {
       <header>
         <div className="flex-row">
             <div className="my-logo">
-              <a><img src="./img/ginny.jpg" alt="ginny-logo"/></a>
+              <a><img src={Ginny} alt="ginny-logo"/></a>
             </div>
             <nav className="tabs">
               <ul>
