@@ -4,7 +4,12 @@ import './Projects.css';
 import clemo from "./img/clemo.png";
 import easyBook from "./img/easybook.png";
 import funSite from "./img/fun-site.png";
+import charityProject from "./img/CharityProject.png";
+import weatherapp from "./img/weatherapp.png";
+import GAcards from "./img/GAcards.png";
 import comingSoon from "./img/coming soon.jpg";
+
+
 
 class Projects extends Component{
   render(){
@@ -12,16 +17,16 @@ class Projects extends Component{
       <section className="projects">
         <div className="flex-row">
           <div className="container">
-            <div className="image-link"><a><img src={clemo} alt=""/></a></div>
-            <div className="image-link"><a><img src={funSite} alt=""/></a></div>
+            <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/clemo"><img src={clemo} alt=""/></a></div>
+            <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/fun_layout_site"><img src={funSite} alt=""/></a></div>
             <div className="image-link"><a><img src={easyBook} alt=""/></a></div>
-            <div className="image-link"><a><img src={comingSoon} alt=""/></a></div>
+            <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/charityProject"><img src={charityProject} alt=""/></a></div>
           </div>
         </div>
         <div className="flex-row">
           <div className="container offset">
-            <div className="image-link"><a><img src={comingSoon} alt=""/></a></div>
-            <div className="image-link"><a><img src={comingSoon} alt=""/></a></div>
+            <div className="image-link"><a traget="_blank" href="https://github.com/sgoldgar/weatherapp-customization"><img src={weatherapp} alt=""/></a></div>
+            <div className="image-link"><a href="https://ga-cards-7ceed.firebaseapp.com/#/"><img src={GAcards} alt=""/></a></div>
             <div className="image-link"><a><img src={comingSoon} alt=""/></a></div>
           </div>
         </div>

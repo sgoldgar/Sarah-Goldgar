@@ -51,11 +51,18 @@ h3{
   font-size: 24px;
 }
 
-.left-box h2{
-  text-align: center;
-  margin: 6em 1em 0 1em;
+.profile, .contact-container, .skills{
+  margin-top: 5em;
 }
 
+.experience, .education, .projects{
+  margin-top: 2.5em;
+}
+
+.left-box h2{
+  text-align: center;
+  margin: 0em 1em 0 1em;
+}
 
 .left-box p {
   margin: 1em 2em 0 3em
@@ -67,11 +74,6 @@ h3{
 
 .projects i {
   margin-left: 4.5em;
-}
-
-.skills i{
-  margin-left: 3.8em;
-  margin-bottom: 0.3em;
 }
 
 .education i{
@@ -132,27 +134,37 @@ h3{
 }
 
 /*Skills*/
+.skills i{
+  margin: 0 1em;
+  display: inline;
+}
+
 .skill-icons{
   margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 5em;
+  margin-left: 2em;
 }
+
 .inset{
-  margin-left:8em;
+  margin-left:3em;
 }
+
 .skill-icons i{
-  font-size: 220%;
+  font-size: 140%;
   background: darkslategray;
   color: #FFF5B0;
   border-radius: 50%;
-  padding: 2.5%;
+  padding: 2%;
   margin: 0 0.2em;
 }
 
 /*Projects*/
 .project{
-  width: 40%;
+  flex:2;
   margin-left:2em;
+}
+
+.project-container{
+  display:flex;
 }
 
 /*Education*/
@@ -166,4 +178,9 @@ h3{
   display:inline;
   font-weight: normal;
   float: right;
+}
+
+/*Footer*/
+.resume-tag{
+  margin: 6em 2em;
 }
