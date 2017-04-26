@@ -192,8 +192,9 @@ h3{
   text-decoration: none;
   padding: 4px;
   background: #FFF5B0;
+  border: 1px solid darkslategray;
 }
 
 .print-button:hover{
-  border: 1px solid darkslategray;
+  text-decoration: underline;
 }
