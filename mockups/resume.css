@@ -184,3 +184,16 @@ h3{
 .resume-tag{
   margin: 6em 2em;
 }
+
+/*Print Button*/
+.print-button{
+  margin-left: 2em;
+  color: darkslategray;
+  text-decoration: none;
+  padding: 4px;
+  background: #FFF5B0;
+}
+
+.print-button:hover{
+  border: 1px solid darkslategray;
+}
