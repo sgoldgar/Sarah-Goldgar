@@ -1,43 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html {
+  height: 100%;
+}
+
+.big-container {
+  flex: 1;
+}
+
 body {
   background-color: #C2AAB7;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 }
 
-.home{
-  margin: 15% auto;
-  width: 60%;
-}
 
-.button {
-  color: white;
-  border-radius: 25px;
-  padding: 10px 15px;
-  border: 2px solid white;
-  font-size: 100%;
-  background-color: rgba(7, 3, 100, 0.8);
-  margin-top: 20px;
-}
-
-.button:hover {
-  text-decoration: underline;
-  background-color: rgba(7, 3, 100, 1);
-}
-
-h1 {
+/*h1 {
   color: #070364;
-  max-width: 20%;
+  max-width: 25%;
   border: 2px solid #070364;
   margin: 5% auto;
   padding: 2%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 4vw;
-}
+  font-size: 3vw;
+}*/
 
 .flex-row {
   width: 100%;
@@ -48,66 +45,4 @@ h1 {
 .flex-column {
   width: 50%;
   margin: 0;
-}
-
-/*Colors*/
-.grey {
-  background: #E1E1E6;
-}
-
-.cream {
-  background: #F5F1ED;
-}
-
-/* Nav Bar and Header */
-header{
-  background-color: #EBEBCA;
-  flex-direction: row;
-  position: fixed;
-  width: 95%;
-  z-index: 1;
-  top: 0;
-  left: 3%;
-}
-
-.my-logo {
-  margin-right: 40%;
-}
-
-.my-logo img {
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin: 20px 30px;
-  border: 5px solid #747A6D;
-}
-
-#menu-icon, #menu-icon i {
-  display: none;
-}
-
-nav ul {
-  display: flex;
-  padding: 10px;
-}
-
-.navigation-link {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin: 0 1vw;
-  display: flex;
-  padding:15px;
-  background-color: #747A6D;
-}
-
-.navigation-link a {
-  text-decoration: none;
-  color: #E1E1E6;
-  margin: 30% auto;
-  font-size: 90%;
-}
-
-.navigation-link a:hover, .selected {
-  text-decoration: underline;
 }

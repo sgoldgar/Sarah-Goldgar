@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
 import NotFound from './components/NotFound';
-import './index.css';
+import './App.css';
 
 ReactDOM.render(
   (<Router history={hashHistory}>

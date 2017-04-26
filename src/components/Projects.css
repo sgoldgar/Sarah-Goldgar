@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 
-.experience {
-  margin: 5% 0;
-}
-
-.about {
-  padding: 10% 10% 0% 10%;
-}
-
-.about h1 {
-  margin: 3% auto;
+.projects {
+  margin: 10% 0 0 0;
 }
 
 .container {
@@ -30,7 +22,11 @@
   flex-wrap: wrap;
 }
 
-.about h2, .projects h2 {
+.projects h1{
+  max-width: 30%;
+}
+
+.projects h2 {
   color: #070364;
   padding-left: 80px;
   padding-bottom: 10px;
@@ -40,35 +36,21 @@
 }
 
 /*Circle Links*/
-.circle {
-  position: relative;
-  border-radius: 50%;
-  width: 120px;
-  min-height: 120px;
-  margin: 0px 50px;
-  background-color: #070364;
+.image-link img{
+   position: relative;
+   width: 100%; /* for IE 6 */
+   border-radius: 50%;
+   width: 150px;
+   min-height:150px;
+   margin: 10px 20px;
 }
 
-.circle a {
- position: absolute;
- top: 50px;
- left: 0;
- width: 100%;
- color: #F5F1ED;
- font-size: 110%;
- text-decoration: none;
- letter-spacing: 1.2px;
+.image-link img {
+  background: white;
+  border: 5px solid #747A6D;
 }
 
-.about a:hover {
-  text-decoration: underline;
-  font-size: 120%;
-}
-.circle:hover{
+.image-link img:hover {
+  opacity: 0.7;
   box-shadow: 0px 0px 20px white;
-}
-
-/*More Info*/
-.more-info{
-  margin-top: 5%;
 }

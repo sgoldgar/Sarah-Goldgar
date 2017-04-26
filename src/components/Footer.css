@@ -1,0 +1,29 @@
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  margin-top: 20px;
+}
+
+footer h5, footer a{
+  color: #747A6D;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+footer li {
+  margin: 5% 1% 0 1%;
+  padding: 1%;
+  border-radius: 50%;
+  background-color: #EBEBCA;
+}
+
+footer li:hover{
+  box-shadow: 0px 0px 20px white;
+}
