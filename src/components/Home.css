@@ -1,0 +1,142 @@
+#welcome-container{
+  margin-top: 10%;
+}
+
+/**
+   Coded by /u/j0be in scss.
+   See scss source here -> http://codepen.io/j0be/pen/MKRVyN
+*/
+
+@import url("https://fonts.googleapis.com/css?family=League+Script");
+/*animations*/
+@keyframes walkleft {
+  from { transform: translateY(60px) translateX(10px) rotate(-10deg); }
+  to { transform: translateY(60px) translateX(10px) rotate(20deg); }
+  }
+@keyframes walkright {
+  from { transform: translateY(60px) translateX(45px) rotate(20deg); }
+  to { transform: translateY(60px) translateX(45px) rotate(-10deg); }
+  }
+@keyframes pandago {
+  0% { transform: translateY(210px) translateX(1080px); }
+  to { transform: translateY(210px) translateX(580px); }
+  }
+
+/*panda*/
+#panda {
+  position: absolute;
+  transform: translateY(210px) translateX(1080px);
+  animation: pandago 6s infinite alternate;
+  }
+
+#head {
+  width: 78px;
+  height: 78px;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-67px) translateX(7px);
+  z-index: 2;
+  }
+
+#left-ear, #right-ear, #right-eye-outer, #left-eye-outer {
+  width: 22px;
+  height: 19px;
+  border-radius: 50% 55% 35% 35%;
+  background: #261d14;
+  position: absolute;
+  transform: rotate(-20deg);
+}
+
+    #right-ear {
+      transform: translateX(54px) rotate(35deg);
+    }
+
+    #right-eye-outer {
+      border-radius: 50% 55% 35% 35%;
+      transform: translateX(40px) translateY(30px) rotate(35deg);
+    }
+
+    #left-eye-outer {
+      border-radius: 50% 55% 35% 35%;
+      transform: translateX(5px) translateY(30px) rotate(-35deg);
+    }
+
+    #nose {
+    width: 10px;
+    height: 10px;
+    background: #261d14;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(25px) translateY(55px);
+    }
+
+    #body, #inner-body {
+      width: 80px;
+      height: 85px;
+      background: #261d14;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    #inner-body {
+      width: 50px;
+      height: 60px;
+      background: white;
+      transform: translateY(10px) translateX(5px);
+      z-index: 1;
+    }
+
+    #left-arm, #right-arm, #right-leg {
+      width: 30px;
+      height: 50px;
+      background: #261d14;
+      position: fixed;
+      border-radius: 55% 55% 55% 55% / 50% 60% 50% 50%;
+      transform: translateY(-8px) translateX(-8px) rotate(-35deg);
+    }
+
+    #right-arm {
+      transform: translateY(20px) translateX(40px) rotate(-140deg);
+      z-index: 2;
+    }
+
+    #left-leg {
+      width: 30px;
+      height: 50px;
+      background: #261d14;
+      position: absolute;
+      border-radius: 55% 55% 55% 55% / 50% 60% 50% 50%;
+      animation: walkleft 1s infinite alternate;
+    }
+
+    #right-leg {
+      animation: walkright 1.5s infinite alternate;
+    }
+
+    /*sign*/
+
+    #sign, #signpost {
+      width: 150px;
+      height: 70px;
+      box-shadow: 2px 2px 2px 2px lightgray;
+      background: white;
+      position: absolute;
+      transform: translateY(-120px) translateX(-105px) rotate(-10deg);
+      z-index: -1;
+    }
+
+    #sign p, #signpost p {
+      margin-left: 15px;
+      margin-top: 20px;
+      font-family: 'League Script', cursive;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+
+    #signpost {
+      width: 10px;
+      height: 80px;
+      transform: translateY(-65px) translateX(-20px) rotate(-15deg);
+      z-index: -2;
+  }

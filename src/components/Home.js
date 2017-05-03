@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import '../App.css'
+import '../App.css';
+import './Home.css';
+// import './Home.scss';
+
 
 class Home extends Component{
   render(){
@@ -23,7 +26,7 @@ class Home extends Component{
             <div id="right-leg"></div>
 
             <div id="sign">
-              <p>Welcome</p>
+              <p id="welcome">Welcome</p>
             </div>
             <div id="signpost"></div>
           </div>

@@ -7,6 +7,7 @@ function showWebDev(){
   document.getElementById('law').style.display='none';
   document.getElementById('film').style.display='none';
   document.getElementById('personal-about').style.display='none';
+  document.getElementById('resume').style.display='none';
 }
 
 function showLaw(){
@@ -14,6 +15,7 @@ function showLaw(){
   document.getElementById('webdev').style.display='none';
   document.getElementById('film').style.display='none';
   document.getElementById('personal-about').style.display='none';
+  document.getElementById('resume').style.display='none';
 }
 
 function showFilm(){
@@ -21,10 +23,15 @@ function showFilm(){
   document.getElementById('law').style.display='none';
   document.getElementById('webdev').style.display='none';
   document.getElementById('personal-about').style.display='none';
+  document.getElementById('resume').style.display='none';
 }
 
 function showResume(){
-  window.open('../static/resume.html', '_blank', 'toolbar=0,location=0,menubar=0');
+  document.getElementById('resume').style.display='block';
+  document.getElementById('film').style.display='none';
+  document.getElementById('law').style.display='none';
+  document.getElementById('webdev').style.display='none';
+  document.getElementById('personal-about').style.display='none';
 }
 
 class About extends Component{
@@ -58,6 +65,10 @@ class About extends Component{
           Film theory and design
         </div>
         <div style={{display:'none'}} id="resume">
+          <div>
+            <i class="fa fa-download fa-5x" aria-hidden="true"></i>
+            <a href="./static/Sarah-Goldgar-Resume.pdf" download>Download a copy of my resume</a>
+          </div>
         </div>
 
         <div className="flex-row experience">

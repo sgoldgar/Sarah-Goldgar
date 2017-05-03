@@ -2,6 +2,7 @@
 
 .experience {
   margin: 4% 0;
+  animation: fade 1.5s;
 }
 
 .about {
@@ -74,7 +75,7 @@
 }
 
 /*Center Content*/
-#film, #law, #webdev, #personal-about {
+#film, #law, #webdev, #personal-about, #resume {
   line-height: 1.6;
   margin: 2% auto;
   width:60%;
@@ -82,12 +83,7 @@
 }
 
 #resume{
-  top: 0;
-  position: absolute;
-  z-index: 1;
-  width: 170vh;
-  height: 100vh;
-  background: black;
+  color: black;
 }
 
 /*animations*/
