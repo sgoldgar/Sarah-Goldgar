@@ -39,7 +39,8 @@ class About extends Component{
     return(
       <section className="about">
         <div id="personal-about">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          I'm an Austin native who left to pursue a film degree, returned with a law degree, and now am focused on
+          growing my skills and career in front-end web development. I have a dog named Virginia Woof (Ginny for short-- click her picture in the nav bar for some cute pictures) and we like to go on hikes and read mysteries or sci-fi books in the backyard. In my spare time I make pixel art or css animations of cute animals, take pictures, and play RPGs or board games.
         </div>
         <div style={{display:'none'}} id="webdev">
           <strong>Front-end web developer with full stack knowledge.</strong>
@@ -65,7 +66,7 @@ class About extends Component{
           Film theory and design
         </div>
         <div style={{display:'none'}} id="resume">
-            <i className="fa fa-download fa-5x" aria-hidden="true"></i>
+            <a href="./static/Sarah-Goldgar-Resume.pdf" download><i className="fa fa-download fa-5x" aria-hidden="true"></i></a>
             <a href="./static/Sarah-Goldgar-Resume.pdf" download>Download a copy of my resume</a>
         </div>
 

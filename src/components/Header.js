@@ -10,7 +10,7 @@ class Header extends Component {
       <header>
         <div className="flex-row">
             <div className="my-logo">
-              <a><img src={Ginny} alt="ginny-logo"/></a>
+              <a><Link to="/dogmom"><img src={Ginny} alt="ginny-logo"/></Link></a>
             </div>
             <nav className="tabs">
               <ul>
