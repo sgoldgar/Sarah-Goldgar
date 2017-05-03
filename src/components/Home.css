@@ -10,23 +10,81 @@
 @import url("https://fonts.googleapis.com/css?family=League+Script");
 /*animations*/
 @keyframes walkleft {
-  from { transform: translateY(60px) translateX(10px) rotate(-10deg); }
-  to { transform: translateY(60px) translateX(10px) rotate(20deg); }
+  0% { transform: translateY(60px) translateX(10px) rotate(10deg); }
+  10% { transform: translateY(60px) translateX(10px) rotate(-5deg); }
+  20% { transform: translateY(60px) translateX(10px)}
+  30% { transform: translateY(60px) translateX(10px)}
+  40% { transform: translateY(60px) translateX(10px) rotate(10deg); }
+  50% { transform: translateY(60px) translateX(10px) rotate(-5deg); }
+  60% { transform: translateY(60px) translateX(10px)}
+  70% { transform: translateY(60px) translateX(10px)}
+  80% { transform: translateY(60px) translateX(10px) rotate(10deg); }
+  100% { transform: translateY(60px) translateX(10px) rotate(-5deg); }
   }
 @keyframes walkright {
-  from { transform: translateY(60px) translateX(45px) rotate(20deg); }
-  to { transform: translateY(60px) translateX(45px) rotate(-10deg); }
-  }
+  0% { transform: translateY(60px) translateX(45px) rotate(10deg); }
+  10% { transform: translateY(60px) translateX(45px) rotate(-5deg); }
+  20% { transform: translateY(60px) translateX(45px)}
+  30% { transform: translateY(60px) translateX(45px)}
+  40% { transform: translateY(60px) translateX(45px) rotate(10deg); }
+  50% { transform: translateY(60px) translateX(45px) rotate(-5deg); }
+  60% { transform: translateY(60px) translateX(45px)}
+  70% { transform: translateY(60px) translateX(45px)}
+  80% { transform: translateY(60px) translateX(45px) rotate(10deg); }
+  100% { transform: translateY(60px) translateX(45px) rotate(-5deg); }
+}
+
 @keyframes pandago {
   0% { transform: translateY(210px) translateX(1080px); }
-  to { transform: translateY(210px) translateX(580px); }
+  10% { transform: translateY(210px) translateX(1080px); }
+  20% { transform: translateY(210px) translateX(580px); }
+  30% { transform: translateY(210px) translateX(580px); }
+  40% { transform: translateY(210px) translateX(110px);
+        -webkit-backface-visibility: visible;
+       }
+  50% { transform: translateY(210px) translateX(110px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  60% { transform: translateY(210px) translateX(580px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  70% { transform: translateY(210px) translateX(580px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  80% { transform: translateY(210px) translateX(1080px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  100% { transform: translateY(210px) translateX(1080px) rotateY(180deg); }
   }
+
+@keyframes flip {
+  0% { transform: translateY(210px) translateX(1080px); }
+  10% { transform: translateY(210px) translateX(1080px); }
+  20% { transform: translateY(210px) translateX(580px); }
+  30% { transform: translateY(210px) translateX(580px); }
+  40% { transform: translateY(210px) translateX(110px);}
+  50% { transform: translateY(210px) translateX(110px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  60% { transform: translateY(210px) translateX(580px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  70% { transform: translateY(210px) translateX(580px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  80% { transform: translateY(210px) translateX(1080px) rotateY(180deg);
+        -webkit-backface-visibility: visible;
+      }
+  100% { transform: translateY(210px) translateX(1080px) rotateY(180deg); }
+}
+
 
 /*panda*/
 #panda {
   position: absolute;
   transform: translateY(210px) translateX(1080px);
-  animation: pandago 6s infinite alternate;
+  animation: pandago 30s infinite alternate;
+  animation: flip 30s infinite;
   }
 
 #head {
@@ -96,9 +154,24 @@
       transform: translateY(-8px) translateX(-8px) rotate(-35deg);
     }
 
+    #left-arm{
+      animation: liftarm 1s infinite alternate;
+    }
+
+    @keyframes liftarm{
+      from {transform:translateY(-6px) translateX(-8px) rotate(-35deg);}
+      to {transform: translateY(-8px) translateX(-8px) rotate(-35deg);}
+    }
+
     #right-arm {
       transform: translateY(20px) translateX(40px) rotate(-140deg);
       z-index: 2;
+      animation: swing 1s infinite alternate;
+    }
+
+    @keyframes swing{
+      from {transform: translateY(20px) translateX(40px) rotate(-130deg);}
+      to {transform: translateY(20px) translateX(40px) rotate(-180deg);}
     }
 
     #left-leg {
@@ -107,11 +180,11 @@
       background: #261d14;
       position: absolute;
       border-radius: 55% 55% 55% 55% / 50% 60% 50% 50%;
-      animation: walkleft 1s infinite alternate;
+      animation: walkleft 15s infinite ;
     }
 
     #right-leg {
-      animation: walkright 1.5s infinite alternate;
+      animation: walkright 15.5s infinite;
     }
 
     /*sign*/
@@ -126,17 +199,34 @@
       z-index: -1;
     }
 
-    #sign p, #signpost p {
-      margin-left: 15px;
+    #sign{
+      animation: liftsign 1s infinite alternate;
+    }
+
+    @keyframes liftsign{
+      from {transform:translateY(-118px) translateX(-105px) rotate(-10deg);}
+      to {transform: translateY(-120px) translateX(-105px) rotate(-10deg);}
+    }
+
+
+    #sign p {
+      margin-left: 5px;
       margin-top: 20px;
       font-family: 'League Script', cursive;
       font-weight: bolder;
-      font-size: 30px;
+      font-size: 20px;
     }
+
 
     #signpost {
       width: 10px;
       height: 80px;
       transform: translateY(-65px) translateX(-20px) rotate(-15deg);
       z-index: -2;
+      animation: liftsignpost 1s infinite alternate;
+  }
+
+  @keyframes liftsignpost{
+    from {transform:translateY(-63px) translateX(-20px) rotate(-15deg);}
+    to {transform: translateY(-65px) translateX(-20px) rotate(-15deg);}
   }

@@ -26,7 +26,7 @@ class Home extends Component{
             <div id="right-leg"></div>
 
             <div id="sign">
-              <p id="welcome">Welcome</p>
+              <p id="welcome">Under Construction</p>
             </div>
             <div id="signpost"></div>
           </div>
