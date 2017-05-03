@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 
 .experience {
-  margin: 5% 0;
+  margin: 4% 0;
 }
 
 .about {
@@ -73,4 +73,25 @@
   margin-top: 5%;
 }
 
-/*Lightboxes*/
+/*Center Content*/
+#film, #law, #webdev, #personal-about {
+  line-height: 1.6;
+  margin: 2% auto;
+  width:60%;
+  animation: fade 1.5s;
+}
+
+#resume{
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  width: 170vh;
+  height: 100vh;
+  background: black;
+}
+
+/*animations*/
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

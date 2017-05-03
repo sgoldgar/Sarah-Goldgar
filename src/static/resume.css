@@ -4,8 +4,6 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-
-
 main{
   margin-top: 3em;
   margin-left: 2em;
@@ -54,11 +52,11 @@ h3{
 }
 
 .profile, .contact-container, .skills{
-  margin-top: 4em;
+  margin-top: 5em;
 }
 
 .experience, .education, .projects{
-  margin-top: 1.5em;
+  margin-top: 2.5em;
 }
 
 .left-box h2{
@@ -89,19 +87,20 @@ h3{
   margin-top: 2em;
 }
 
-
+}
 .contact a{
   text-decoration: none;
+  color: darkslategray;
 }
-
 
 .contact p{
   margin: 0 0 0 1em;
   display: inline;
   color: darkslategray;
+  text-decoration: none;
 }
 
-.contact a:hover{
+.contact p:hover{
   text-decoration: underline;
 }
 
@@ -142,7 +141,7 @@ h3{
 
 .skill-icons{
   margin-top: 1em;
-  margin-left: 1.5em;
+  margin-left: 2em;
 }
 
 .inset{
@@ -158,14 +157,10 @@ h3{
   margin: 0 0.2em;
 }
 
-#skills-piped{
-  margin: 0 1em;
-}
-
 /*Projects*/
 .project{
   flex:2;
-  margin:0 2.5em;
+  margin-left:2em;
 }
 
 .project-container{

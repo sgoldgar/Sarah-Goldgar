@@ -1,0 +1,172 @@
+
+#panda-container{
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=League+Script');
+
+/*animations*/
+@keyframes walkleft {
+  from {
+    transform: translateY(60px) translateX(10px) rotate(-10deg);
+  }
+  to {
+    transform: translateY(60px) translateX(10px) rotate(20deg);
+  }
+}
+
+@keyframes walkright {
+  from {
+    transform: translateY(60px) translateX(45px) rotate(20deg);
+  }
+  to {
+    transform: translateY(60px) translateX(45px) rotate(-10deg);
+  }
+}
+
+
+@keyframes pandago {
+  0%{
+    transform: translateY(210px) translateX(1080px);
+  }
+  to{
+   transform: translateY(210px) translateX(580px);
+  }
+}
+
+
+body{
+  background: #FFD7D7;
+}
+
+/*panda*/
+
+$black: #261d14;
+
+#panda{
+  position: absolute;
+  transform: translateY(210px) translateX(1080px);
+  animation: pandago 4s;
+}
+
+#head{
+  width: 78px;
+  height: 78px;
+  background: white;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-67px)  translateX(7px);
+  z-index: 2;
+}
+
+#left-ear{
+  width: 22px;
+  height: 19px;
+  border-radius: 50% 55% 35% 35%;
+  background: $black;
+  position: absolute;
+  transform: rotate(-20deg);
+}
+
+#right-ear{
+  @extend #left-ear;
+  transform: translateX(54px) rotate(35deg);
+}
+
+#right-eye-outer{
+  @extend #left-ear;
+  border-radius: 50% 55% 35% 35%;
+  transform: translateX(40px) translateY(30px) rotate(35deg);
+}
+
+#left-eye-outer{
+  @extend #left-ear;
+  border-radius: 50% 55% 35% 35%;
+  transform: translateX(5px) translateY(30px) rotate(-35deg);
+}
+
+#nose{
+  width: 10px;
+  height: 10px;
+  background: $black;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(25px)
+  translateY(55px);
+}
+
+#body{
+  width: 80px;
+  height: 85px;
+  background: $black;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#inner-body{
+  @extend #body;
+  width: 50px;
+  height: 60px;
+  background: white;
+  transform: translateY(10px)  translateX(5px);
+  z-index: 1;
+}
+
+
+#left-arm {
+  width: 30px;
+  height: 50px;
+  background: $black;
+  position: fixed;
+  border-radius: 55% 55% 55% 55% / 50% 60% 50% 50%;
+ transform: translateY(-8px) translateX(-8px) rotate(-35deg);
+}
+
+#right-arm{
+  @extend #left-arm;
+ transform: translateY(20px) translateX(40px) rotate(-140deg);
+ z-index: 2;
+}
+
+#left-leg{
+  width: 30px;
+  height: 50px;
+  background: $black;
+  position: absolute;
+  border-radius: 55% 55% 55% 55% / 50% 60% 50% 50%;
+  animation: walkleft 1s infinite alternate;
+}
+
+#right-leg{
+ @extend #left-arm;
+ animation: walkright 1.5s infinite alternate;
+}
+
+/*sign*/
+
+#sign{
+  width: 150px;
+  height:70px;
+  box-shadow:2px 2px 2px 2px lightgray;
+  background: white;
+  position: absolute;
+  transform: translateY(-120px) translateX(-105px) rotate(-10deg);
+  z-index:-1;
+}
+
+#sign p {
+  margin-left:15px;
+  margin-top: 20px;
+  font-family: 'League Script', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+#signpost{
+  @extend #sign;
+  width: 10px;
+  height: 80px;
+  transform: translateY(-65px) translateX(-20px) rotate(-15deg);
+  z-index:-2;
+}
