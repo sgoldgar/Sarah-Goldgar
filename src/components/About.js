@@ -65,10 +65,8 @@ class About extends Component{
           Film theory and design
         </div>
         <div style={{display:'none'}} id="resume">
-          <div>
-            <i class="fa fa-download fa-5x" aria-hidden="true"></i>
+            <i className="fa fa-download fa-5x" aria-hidden="true"></i>
             <a href="./static/Sarah-Goldgar-Resume.pdf" download>Download a copy of my resume</a>
-          </div>
         </div>
 
         <div className="flex-row experience">

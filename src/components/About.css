@@ -83,7 +83,17 @@
 }
 
 #resume{
-  color: black;
+  color: darkslategray;
+  display: block;
+}
+
+#resume a{
+  color: darkslategray;
+}
+
+#resume i{
+  width: 100%;
+  margin-bottom: 1%;
 }
 
 /*animations*/
