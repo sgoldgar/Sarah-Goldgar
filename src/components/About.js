@@ -40,7 +40,7 @@ class About extends Component{
       <section className="about">
         <div id="personal-about">
           I'm an Austin native who left to pursue a film degree, returned with a law degree, and now am focused on
-          growing my skills and career in front-end web development. I have a dog named Virginia Woof (Ginny for short-- click her picture in the nav bar for some cute pictures) and we like to go on hikes and read mysteries or sci-fi books in the backyard. In my spare time I make pixel art or css animations of cute animals, take pictures, and play RPGs or board games.
+          growing my skills and career in front-end web development. I have a dog named Virginia Woof (Ginny for short-- click her picture in the nav bar for some cute pictures) and we like to go on hikes and hang out in the backyard (I read sci-fi and mysteries and she digs up my hard work in the garden). In my spare time I take pictures, play RPGs and board games, and try my hand at pixel art and css animations.
         </div>
         <div style={{display:'none'}} id="webdev">
           <strong>Front-end web developer with full stack knowledge.</strong>

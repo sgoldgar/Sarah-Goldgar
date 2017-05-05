@@ -9,6 +9,7 @@ footer h5, footer a{
   color: darkslategray;
 }
 
+
 footer ul {
   display: flex;
   flex-direction: row;
