@@ -1,4 +1,12 @@
 .ginnypics{
-  margin: 13% 0 0 0;
+  margin: 20% 0 0 0;
   animation: fade 1.5s;
+}
+
+img{
+  max-height:100px;
+}
+
+.sideways{
+  transform: rotate(90deg);
 }

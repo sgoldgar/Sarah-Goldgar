@@ -19,7 +19,7 @@ class Projects extends Component{
           <div className="container">
             <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/clemo"><img src={clemo} alt=""/></a></div>
             <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/fun_layout_site"><img src={funSite} alt=""/></a></div>
-            <div className="image-link"><a><img src={easyBook} alt=""/></a></div>
+            <div className="image-link"><a target="_blank" href="https://www.canva.com/design/DACGDjbjycQ/UK-WAR13Zp5NJPXF7G9_uA/view?utm_content=DACGDjbjycQ&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"><img src={easyBook} alt=""/></a></div>
             <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/charityProject"><img src={charityProject} alt=""/></a></div>
           </div>
         </div>

@@ -83,8 +83,30 @@
 #panda {
   position: absolute;
   transform: translateY(210px) translateX(1080px);
-  animation: pandago 30s infinite alternate;
-  animation: flip 30s infinite;
+  animation: pandago 20s infinite alternate;
+  animation: flip 20s infinite;
+  }
+  #hat{
+    width: 58px;
+    height: 38px;
+    border: 1px solid gray;
+    background: #FEE101;
+    position: absolute;
+    border-radius: 50% 50% 20% 20%;
+    transform: translateY(-88px)  translateX(12px) rotate(-10deg);
+    z-index: 3;
+  }
+
+
+  #hatbrim{
+    width: 48px;
+    height: 18px;
+    border: 1px solid gray;
+    background: #FEE101;
+    position: absolute;
+    border-radius: 40% 40% 40% 40%;
+    transform: translateY(-59px)  translateX(5px) rotate(-10deg);
+    z-index: 3;
   }
 
 #head {

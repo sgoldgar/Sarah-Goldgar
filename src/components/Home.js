@@ -10,6 +10,8 @@ class Home extends Component{
       <section className="home">
         <section id="welcome-container">
           <div id="panda">
+            <div id="hat"></div>
+            <div id="hatbrim"></div>
             <div id="head">
               <div id="left-ear"></div>
               <div id="right-ear"></div>
