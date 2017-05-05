@@ -36,11 +36,20 @@ class Contact extends Component{
     return(
       <section className="contact">
         <form method="GET" action="mailto:test@example.com" enctype="text/plain">
-          <input type="text" name="name" value="" placeholder="Name"/>
-          <input type="email" name="contact" value="" placeholder="Email"/>
-          <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
+          <div>
+            <p>1. Fill in your name and email.</p>
+            <input id="name" type="text" name="name" value="" placeholder="Name"/>
+            <input id="email" type="email" name="contact" value="" placeholder="Email"/>
+          </div>
+          <div>
+            <p>2. Write a message!</p>
+            <textarea id="message"name="name" rows="8" cols="80" placeholder="Message"></textarea>
+          </div>
         </form>
-        <input type="submit" value="Get in touch" className="button"/>
+        <div>
+          <p>3. Send away!</p>
+          <input type="submit" value="Get in touch" className="button"/>
+        </div>
       </section>
     )
   }
