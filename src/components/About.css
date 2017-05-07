@@ -50,23 +50,21 @@
   background-color: darkslategray;
 }
 
-.circle a {
+.circle p {
  position: absolute;
- top: 50px;
+ top: 32px;
  left: 0;
  width: 100%;
  color: #F5F1ED;
  font-size: 110%;
- text-decoration: none;
  letter-spacing: 1.2px;
+ font-weight: lighter;
 }
 
-.about a:hover {
-  text-decoration: underline;
-}
 
 .circle:hover{
   box-shadow: 0px 0px 20px white;
+  cursor: pointer;
 }
 
 /*More Info*/

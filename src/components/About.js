@@ -72,16 +72,16 @@ class About extends Component{
 
         <div className="flex-row experience">
           <div className="container">
-            <div className="circle">
-              <a onClick={showWebDev}>Web Dev</a>
+            <div className="circle" onClick={showWebDev}>
+              <p>Web Dev</p>
             </div>
-            <div className="circle">
-              <a onClick={showLaw}>Law</a>
+            <div className="circle" onClick={showLaw}>
+              <p>Law</p>
             </div>
-            <div className="circle">
-              <a onClick={showFilm}>Film</a>
+            <div className="circle" onClick={showFilm}>
+              <p>Film</p>
             </div>
-            <div className="circle"><a onClick={showResume}>Resume</a></div>
+            <div className="circle" onClick={showResume}><p>Resume</p></div>
           </div>
         </div>
 
