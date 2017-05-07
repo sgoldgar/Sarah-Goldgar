@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.f164f4b1.css",
-  "main.css.map": "static/css/main.f164f4b1.css.map",
-  "main.js": "static/js/main.74655f71.js",
-  "main.js.map": "static/js/main.74655f71.js.map",
+  "main.css": "static/css/main.ce957896.css",
+  "main.css.map": "static/css/main.ce957896.css.map",
+  "main.js": "static/js/main.3bef1659.js",
+  "main.js.map": "static/js/main.3bef1659.js.map",
   "static/media/CharityProject.png": "static/media/CharityProject.f3550b0b.png",
   "static/media/GAcards.png": "static/media/GAcards.351413c3.png",
   "static/media/clemo.png": "static/media/clemo.14fc6fbe.png",
@@ -10,5 +10,10 @@
   "static/media/easybook.png": "static/media/easybook.e9990e75.png",
   "static/media/fun-site.png": "static/media/fun-site.e91d30ce.png",
   "static/media/ginny.jpg": "static/media/ginny.64b52b5e.jpg",
+  "static/media/ginnypic1.jpg": "static/media/ginnypic1.4459f552.jpg",
+  "static/media/ginnypic2.jpg": "static/media/ginnypic2.8fc85e09.jpg",
+  "static/media/ginnypic3.jpg": "static/media/ginnypic3.3580673c.jpg",
+  "static/media/ginnypic4.jpg": "static/media/ginnypic4.4239ee41.jpg",
+  "static/media/ginnypic5.JPG": "static/media/ginnypic5.c8df9b25.JPG",
   "static/media/weatherapp.png": "static/media/weatherapp.b45435fc.png"
 }
