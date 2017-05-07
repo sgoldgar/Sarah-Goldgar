@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import './About.css';
+import Resume from '/.img/Sarah-Goldgar-Resume.pdf'
 
 function showWebDev(){
   document.getElementById('webdev').style.display='block';
@@ -66,8 +67,8 @@ class About extends Component{
           Film theory and design
         </div>
         <div style={{display:'none'}} id="resume">
-            <a href="./static/Sarah-Goldgar-Resume.pdf" download><i className="fa fa-download fa-5x" aria-hidden="true"></i></a>
-            <a href="./static/Sarah-Goldgar-Resume.pdf" download>Download a copy of my resume</a>
+            <a href={Resume} download><i className="fa fa-download fa-5x" aria-hidden="true"></i></a>
+            <a href={Resume} download>Download a copy of my resume</a>
         </div>
 
         <div className="flex-row experience">
