@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import './About.css';
-import Resume from './img/Sarah-Goldgar-Resume.pdf'
+import Resume from './img/Sarah_Goldgar-Resume.pdf'
 
 function showWebDev(){
   document.getElementById('webdev').style.display='block';
