@@ -252,3 +252,37 @@
     from {transform:translateY(-63px) translateX(-20px) rotate(-15deg);}
     to {transform: translateY(-65px) translateX(-20px) rotate(-15deg);}
   }
+
+  #welcome-text{
+    display:none;
+  }
+
+  /*Tablets*/
+  @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1023px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+      #welcome-container{
+        margin-top: 25%;
+      }
+
+      #panda {
+        display:none;
+      }
+
+      #welcome-text{
+        font-family: 'League Script', cursive;
+        animation: fade 1s;
+        display: block;
+        margin: 35% 0 0 0;
+        font-size: 500%;
+        transform: rotate(-8deg);
+      }
+  }
+
+  /*animations*/
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }

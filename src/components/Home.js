@@ -8,6 +8,7 @@ class Home extends Component{
   render(){
     return(
       <section className="home">
+        <p id="welcome-text">Welcome</p>
         <section id="welcome-container">
           <div id="panda">
             <div id="hat"></div>
