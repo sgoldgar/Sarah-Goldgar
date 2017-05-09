@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-.offset {
+.container.offset {
   margin: 1% 18%;
   flex-direction: row;
   display: inherit;
