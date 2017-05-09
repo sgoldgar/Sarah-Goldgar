@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-.container.offset {
+.offset {
   margin: 1% 18%;
   flex-direction: row;
   display: inherit;
@@ -78,4 +78,34 @@
       height: 110px;
       margin: 20px 20px;
     }
+}
+
+/*Larger Phones*/
+@media screen
+and (min-device-width: 320px)
+and (max-device-width: 425px)
+and (-webkit-device-pixel-ratio: 2) {
+
+  .projects{
+    margin: 30% 0 0 0;
+  }
+
+  .image-link img{
+    margin: 10px 0px;
+  }
+
+  .container.offset{
+    margin: 0 6%;
+  }
+}
+
+/*Small and Medium Phones*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 424px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .projects{
+    margin: 40% 20%;
+  }
 }

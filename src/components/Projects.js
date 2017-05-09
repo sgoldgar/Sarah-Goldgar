@@ -16,7 +16,7 @@ class Projects extends Component{
     return(
       <section className="projects">
         <div style={{display:'none'}} className="popup" id="project1">
-            <img src={ClemoSplash}/>
+            <img src={ClemoSplash} alt=""/>
             <p>Description</p>
             <a target="_blank" href="https://github.com/sgoldgar/clemo"></a>
         </div>

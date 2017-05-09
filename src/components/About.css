@@ -22,7 +22,7 @@
   flex-wrap: wrap;
 }
 
-.container.offset {
+.about .container.offset {
   margin: 1% 18%;
   flex-direction: row;
   display: inherit;
@@ -138,4 +138,52 @@
     footer li{
       padding: 5px;
     }
+}
+
+/*Phones*/
+@media screen
+and (min-device-width: 320px)
+and (max-device-width: 425px)
+and (-webkit-device-pixel-ratio: 2) {
+
+  .about{
+    padding: 30% 0 0 0;
+  }
+
+  #law, #webdev, #personal-about {
+    width: 90%;
+    height: 5em;
+  }
+
+  #film, #resume{
+    width: 90%;
+    height: 0.5em;
+  }
+
+  .experience{
+    margin-top: 55%;
+  }
+
+  .circle{
+    margin: 10px 25px;
+  }
+}
+
+/*Small and Medium Phones*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 424px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .about{
+    padding: 40% 0 0 0;
+  }
+
+  .experience {
+    margin-top: 105%;
+  }
+
+  .about .container{
+    margin-left: 20%;
+  }
 }

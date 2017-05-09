@@ -286,3 +286,44 @@
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
+
+  /*Phones*/
+  @media screen
+  and (min-device-width: 320px)
+  and (max-device-width: 425px)
+  and (-webkit-device-pixel-ratio: 2) {
+
+    .home{
+      padding-bottom: 0;
+    }
+
+    #welcome-container{
+      margin-top: 25%;
+    }
+
+    #panda {
+      display:none;
+    }
+
+    #welcome-text{
+      font-family: 'League Script', cursive;
+      animation: fade 1s;
+      display: block;
+      margin: 55% 0 0 0;
+      font-size: 500%;
+      transform: rotate(-8deg);
+    }
+}
+
+
+/*Small and Medium Phones*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 424px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #welcome-text{
+    margin: 85% 0 0 0;
+    font-size: 400%;
+  }
+}

@@ -36,6 +36,7 @@ class Contact extends Component{
     return(
       <section className="contact">
         <form method="GET" action="mailto:test@example.com" enctype="text/plain">
+          <p id="contact-title">Get in touch</p>
           <div>
             <p>1. Fill in your name and email.</p>
             <input id="name" type="text" name="name" value="" placeholder="Name"/>
@@ -45,6 +46,7 @@ class Contact extends Component{
             <p>2. Write a message!</p>
             <textarea id="message"name="name" rows="8" cols="80" placeholder="Message"></textarea>
           </div>
+          <input type="submit" value="Get in touch" className="mobile-button"/>
         </form>
         <div>
           <p>3. Send away!</p>

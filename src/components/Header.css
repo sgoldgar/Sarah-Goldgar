@@ -69,3 +69,56 @@ nav ul {
       padding-left: 5em;
     }
 }
+
+/*Phones*/
+@media screen
+and (min-device-width: 320px)
+and (max-device-width: 425px)
+and (-webkit-device-pixel-ratio: 2) {
+
+  .my-logo{
+    display:none;
+  }
+
+  .navigation-link{
+    height: 40px;
+    width: 40px;
+  }
+
+  .navigation-link a{
+    margin: 25% auto;
+    font-size: 85%;
+  }
+
+  .tabs {
+    width: 90%;
+    padding-left: 2em;
+  }
+}
+
+/*Small and Medium Phones*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 424px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .navigation-link{
+    height: 30px;
+    width: 30px;
+    padding: 13px;
+  }
+
+  .tabs{
+    padding-left: 10em;
+    width:50%;
+  }
+
+  .navigation-link a{
+    font-size: 70%;
+  }
+
+  header{
+    height: 6em;
+  }
+
+}
