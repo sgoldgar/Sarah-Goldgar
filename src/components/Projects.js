@@ -8,13 +8,19 @@ import charityProject from "./img/CharityProject.png";
 import weatherapp from "./img/weatherapp.png";
 import GAcards from "./img/GAcards.png";
 import comingSoon from "./img/coming soon.jpg";
-
+import ClemoSplash from './img/Clemo splash.png'
 
 
 class Projects extends Component{
   render(){
     return(
       <section className="projects">
+        <div style={{display:'none'}} className="popup" id="project1">
+            <img src={ClemoSplash}/>
+            <p>Description</p>
+            <a target="_blank" href="https://github.com/sgoldgar/clemo"></a>
+        </div>
+
         <div className="flex-row">
           <div className="container">
             <div className="image-link"><a target="_blank" href="https://github.com/sgoldgar/clemo"><img src={clemo} alt=""/></a></div>

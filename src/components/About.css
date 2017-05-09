@@ -101,3 +101,41 @@
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .about{
+      padding-top: 15%;
+    }
+
+    #film, #law, #webdev, #personal-about, #resume {
+      width: 90%;
+      height: 9em;
+    }
+
+    .experience {
+      margin: 9% 0;
+    }
+
+    .circle{
+      width: 100px;
+      min-height: 100px;
+      margin: 1em 0;
+    }
+
+    .circle p{
+      top: 23px;
+    }
+
+    footer a{
+      font-size: 70%;
+    }
+
+    footer li{
+      padding: 5px;
+    }
+}
