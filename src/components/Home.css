@@ -290,8 +290,7 @@
   /*Phones*/
   @media screen
   and (min-device-width: 320px)
-  and (max-device-width: 425px)
-  and (-webkit-device-pixel-ratio: 2) {
+  and (max-device-width: 425px){
 
     .home{
       padding-bottom: 0;
@@ -319,8 +318,7 @@
 /*Small and Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 424px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 424px){
 
   #welcome-text{
     margin: 85% 0 0 0;

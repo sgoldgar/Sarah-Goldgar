@@ -60,8 +60,7 @@ form .mobile-button{
 /*Tablets*/
 @media only screen
   and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-device-width: 1024px){
 
     .contact{
       margin-top: 25%;
@@ -77,8 +76,7 @@ form .mobile-button{
 /*Large Phones*/
 @media screen
 and (min-device-width: 320px)
-and (max-device-width: 425px)
-and (-webkit-device-pixel-ratio: 2) {
+and (max-device-width: 425px){
 
   .contact {
     margin: 30% 0 0 0;
@@ -116,15 +114,22 @@ and (-webkit-device-pixel-ratio: 2) {
     display: block;
     font-size: 130%;
   }
+
+  form .mobile-button{
+    display: block;
+  }
 }
 
 /*Small and Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 424px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 424px){
 
   form{
     width:80%;
+  }
+
+  form .mobile-button{
+    display: block;
   }
 }

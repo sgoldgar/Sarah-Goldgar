@@ -61,8 +61,7 @@ nav ul {
 /*Tablets*/
 @media only screen
   and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-device-width: 1024px) {
 
     .tabs{
       width:45%;
@@ -73,8 +72,7 @@ nav ul {
 /*Phones*/
 @media screen
 and (min-device-width: 320px)
-and (max-device-width: 425px)
-and (-webkit-device-pixel-ratio: 2) {
+and (max-device-width: 425px){
 
   .my-logo{
     display:none;
@@ -99,8 +97,7 @@ and (-webkit-device-pixel-ratio: 2) {
 /*Small and Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 424px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-device-width: 424px){
 
   .navigation-link{
     height: 30px;

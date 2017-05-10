@@ -29,11 +29,20 @@ footer li:hover{
   box-shadow: 0px 0px 20px white;
 }
 
+/*Tablets*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+
+    footer{
+      position: relative;
+    }
+}
+
 /*Phones*/
 @media screen
 and (min-device-width: 320px)
-and (max-device-width: 425px)
-and (-webkit-device-pixel-ratio: 2) {
+and (max-device-width: 425px) {
 
   footer{
     position: relative;
