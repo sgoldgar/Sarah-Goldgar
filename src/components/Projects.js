@@ -60,9 +60,9 @@ class Projects extends Component{
         },
         {
           title: 'Weather App',
-          description: 'Weather App using Open Weather API and Google Maps API',
+          description: 'Weather App using Open Weather API and Google Maps API. Background changes based on weather in location requested.',
           image: WeatherappSplash,
-          webLink: 'https://sgoldgar.github.io/weatherapp-customization/',
+          webLink: '',
           githubLink: 'https://github.com/sgoldgar/weatherapp-customization/tree/master'
         },
         {
