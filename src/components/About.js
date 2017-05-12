@@ -36,6 +36,15 @@ function showResume(){
 }
 
 class About extends Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      rotateAbout : [
+        {}
+      ],
+      currentRotate: null
+    }
+  }
   render(){
     return(
       <section className="about">

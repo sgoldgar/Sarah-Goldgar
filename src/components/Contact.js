@@ -33,7 +33,7 @@ class Contact extends Component{
   render(){
     return(
       <section className="contact">
-        <form className="form" method="POST" id="mailgun" role="form">
+        <form className="form"  action="https://formspree.io/sgoldgar@gmail.com" method="POST" role="form">
           <p id="contact-title">Get in touch</p>
           <div>
             <p>1. Fill in your name and email.</p>
@@ -41,7 +41,7 @@ class Contact extends Component{
               onChange={(e) => {this.setState({name: e.target.value})}}
               id="name"
               type="name"
-              name="name"
+              name="_replyto"
               placeholder="Name"
               required/>
             <input value={this.state.email}
