@@ -1,0 +1,58 @@
+/*Popups*/
+.popup{
+  display: block;
+  height: 400px;
+  width: 400px;
+  margin-left: 34%;
+  position: fixed;
+  border-radius: 50%;
+	background: rgba(47,79,79,0.95);
+	z-index: 2;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+};
+
+.popup > .popup-inner{
+  margin-top: 20%;
+}
+
+.popup-inner img{
+  width: 250px;
+}
+
+.popup-inner h3{
+  color: white;
+}
+
+.popup-inner p{
+  color: white;
+  font-weight: lighter;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.popup-inner a{
+  color: white;
+  text-decoration: none;
+  margin: 4%;
+}
+
+.popup-inner a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.close:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.opaque{
+  opacity: 0.4;
+}
+
+#phone-img{
+  width: 100px;
+  height: 150px;
+}

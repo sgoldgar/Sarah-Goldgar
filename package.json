@@ -9,11 +9,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "body-parser": "~1.16.0",
+    "body-parser": "^1.16.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
     "express": "~4.14.1",
+    "mailgun-js": "^0.10.1",
     "morgan": "~1.7.0",
     "react-scripts": "^0.9.5",
     "serve-favicon": "~2.3.2"
