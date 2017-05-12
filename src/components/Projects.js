@@ -55,7 +55,7 @@ class Projects extends Component{
           title: 'Charity Wish',
           description: 'Project with UX class to create site that connects charities and donors',
           image: CharityprojectSplash,
-          webLink: 'https://github.com/sgoldgar/charityProject',
+          webLink: 'https://sgoldgar.github.io/CharityProject_FrontEnd',
           githubLink: 'https://github.com/sgoldgar/charityProject'
         },
         {
