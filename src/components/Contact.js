@@ -11,7 +11,8 @@ class Contact extends Component{
     this.state = {
       name : '',
       email : '',
-      message : ''
+      message : '',
+      messageShown : false
     };
   }
 
@@ -25,7 +26,7 @@ class Contact extends Component{
       body: JSON.stringify(this.state)
     })
     .then((res) => {
-
+      this.setState({messageShown: true})
     })
   }
 
@@ -62,13 +63,18 @@ class Contact extends Component{
               placeholder="Message"
               required></textarea>
           </div>
-          <button type="submit" value="Get in touch" className="mobile-button"/>
+          <button onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="mobile-button"/>
         </form>
         <div>
           <p>3. Send away!</p>
-          <input type="submit" value="Get in touch" className="button"/>
+          <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="button"/>
         </div>
-        <p className="confirmation">Message sent!</p>
+
+        {this.state.messageShown ?
+        <p className="confirmation" >Message sent!</p>
+        : null
+        }
+
       </section>
     )
   }
