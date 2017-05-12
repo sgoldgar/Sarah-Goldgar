@@ -18,6 +18,7 @@ import EasyBookSplash from './img/Easybook splash.png';
 import WeatherappSplash from './img/Weatherapp splash.png';
 import WethepeopleSplash from './img/Wethepeople splash.png';
 import CharityprojectSplash from './img/Charityproject splash.png';
+import GAcardSplash from './img/GAcard splash.png';
 
 
 var innerPopup = {
@@ -30,11 +31,11 @@ class Projects extends Component{
     this.state = {
       popups : [
         {
-          title: 'Clemo',
-          description: 'Class exercise to build site for design firm based on mockups and design notes',
-          image: ClemoSplash,
-          webLink: 'https://sgoldgar.github.io/clemo/',
-          githubLink: 'https://github.com/sgoldgar/clemo'
+          title: 'GA Cards',
+          description: 'Class lab to build a React app to make Cards Against Humanity style cards, stored in Firebase database, deployed on Firebase',
+          image: GAcardSplash,
+          webLink: 'https://ga-cards-7ceed.firebaseapp.com/#/',
+          githubLink: 'https://github.com/sgoldgar/ga-cards-react'
         },
         {
           title: 'Circle Theme',
@@ -97,7 +98,7 @@ class Projects extends Component{
           <div className="container">
 
             <div className="image-link" onClick={() => {this.setState({currentPopupIndex:0})}}>
-              <img src={clemo} alt=""/>
+              <img src={GAcards} alt=""/>
             </div>
             <div className="image-link" onClick={() => {this.setState({currentPopupIndex:1})}}>
               <img src={funSite} alt=""/>
