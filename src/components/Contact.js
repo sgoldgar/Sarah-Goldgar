@@ -26,12 +26,18 @@ class Contact extends Component{
       body: JSON.stringify(this.state)
     })
     .then((res) => {
-      this.setState({messageShown: true})
+      this.setState({
+        messageShown: true,
+        name: '',
+        email: '',
+        message: ''
+      })
     })
   }
 
   render(){
     return(
+      <div>
       <section className="contact">
         <form className="form"  action="https://formspree.io/sgoldgar@gmail.com" method="POST" role="form">
           <p id="contact-title">Get in touch</p>
@@ -63,19 +69,19 @@ class Contact extends Component{
               placeholder="Message"
               required></textarea>
           </div>
-          <button onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="mobile-button"/>
+          <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="mobile-button"/>
         </form>
         <div>
           <p>3. Send away!</p>
           <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="button"/>
         </div>
 
-        {this.state.messageShown ?
-        <p className="confirmation" >Message sent!</p>
-        : null
-        }
-
       </section>
+      {this.state.messageShown ?
+      <p className="confirmation" >Message sent!</p>
+      : null
+      }
+      </div>
     )
   }
 }

@@ -51,6 +51,13 @@ form .mobile-button{
   display: none;
 }
 
+.confirmation{
+  border: 1px solid darkslategray;
+  padding: 1em;
+  width: 10em;
+  margin: 0 auto;
+}
+
 /*animations*/
 @keyframes fade {
   0%   { opacity: 0; }
