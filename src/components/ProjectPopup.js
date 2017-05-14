@@ -3,7 +3,7 @@ import '../App.css';
 import './ProjectPopup.css';
 
 var innerPopup = {
-  marginTop: '10%',
+  marginTop: '9%',
 };
 
 
