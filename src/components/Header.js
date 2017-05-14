@@ -8,7 +8,6 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div className="flex-row">
             <div className="my-logo">
               <a><Link to="/dogmom"><img src={Ginny} alt="ginny-logo"/></Link></a>
             </div>
@@ -21,7 +20,6 @@ class Header extends Component {
                 <li className="navigation-link"><Link to="/contact" activeClassName="active" className="link">contact</Link></li>
               </ul>
             </nav>
-        </div>
       </header>
     );
   }
