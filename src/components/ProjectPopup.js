@@ -6,6 +6,10 @@ var innerPopup = {
   marginTop: '9%',
 };
 
+var popupImage = {
+  width: '250px'
+}
+
 
 class ProjectPopup extends Component{
   constructor(props){
@@ -25,7 +29,7 @@ class ProjectPopup extends Component{
           <div className="popup">
             <div className="popup-inner" style={innerPopup}>
               <h3>{this.props.popupData.title}</h3>
-              <img src={this.props.popupData.image} alt=" "></img>
+              <img src={this.props.popupData.image} alt=" " style={popupImage}></img>
               <p>{this.props.popupData.description}</p>
               <a target="_blank" href={this.props.popupData.webLink}>Live Site</a>
               <a target="_blank" href={this.props.popupData.githubLink}>Github</a>
