@@ -3,6 +3,9 @@ import '../App.css';
 import './Home.css';
 // import './Home.scss';
 
+// can add panda hat
+// <div id="hat"></div>
+// <div id="hatbrim"></div>
 
 class Home extends Component{
   render(){
@@ -11,8 +14,7 @@ class Home extends Component{
         <p id="welcome-text">Welcome</p>
         <section id="welcome-container">
           <div id="panda">
-            <div id="hat"></div>
-            <div id="hatbrim"></div>
+
             <div id="head">
               <div id="left-ear"></div>
               <div id="right-ear"></div>
