@@ -75,10 +75,17 @@
 /*Center Content*/
 #film, #law, #webdev, #personal-about, #resume {
   line-height: 1.6;
-  margin: 2% auto;
+  margin: 3% auto;
   width:60%;
   height: 10em;
   animation: fade 1.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillset{
+  text-align: justify;
 }
 
 #resume{
@@ -111,9 +118,12 @@
       padding-top: 15%;
     }
 
-    #film, #law, #webdev, #personal-about, #resume {
+    #film, #law, #webdev, #personal-about, #resume  {
       width: 90%;
       height: 9em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .experience {
@@ -151,11 +161,17 @@ and (max-device-width: 425px){
   #law, #webdev, #personal-about {
     width: 90%;
     height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #film, #resume{
     width: 90%;
     height: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .experience{
