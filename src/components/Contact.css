@@ -56,6 +56,11 @@ form .mobile-button{
   padding: 1em;
   width: 10em;
   margin: 0 auto;
+  z-index: 1;
+  position: absolute;
+  left: 39em;
+  top: 9em;
+  box-shadow: 1px 1px 1px 1px darkslategray;
 }
 
 /*animations*/
@@ -76,6 +81,11 @@ form .mobile-button{
     form{
       margin-left: 6%;
       width: 70%;
+    }
+
+    .confirmation{
+      left: 20em;
+      top: 8em;
     }
 }
 
@@ -125,6 +135,14 @@ and (max-device-width: 425px){
   form .mobile-button{
     display: block;
   }
+
+  .confirmation {
+    left: 7.5em;
+    top: 7em;
+    border: none;
+    box-shadow: 0 0;
+    text-decoration: underline;
+  }
 }
 
 /*Small and Medium Phones*/
@@ -139,4 +157,13 @@ and (max-device-width: 425px){
   form .mobile-button{
     display: block;
   }
+
+  .confirmation {
+    left: 4em;
+    top: 5.5em;
+    border: none;
+    box-shadow: 0 0;
+    text-decoration: underline;
+  }
+
 }
