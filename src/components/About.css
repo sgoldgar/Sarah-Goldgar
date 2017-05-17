@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 
 .experience {
-  margin: 4% 0;
+  margin: 0% 0 3% 0;
   animation: fade 1.5s;
 }
 
 .about {
-  padding: 10% 10% 0% 10%;
+  padding: 7% 10% 3% 10%;
 }
 
 .about h1 {
@@ -85,7 +85,7 @@
 }
 
 .skillset{
-  text-align: justify;
+  font-weight: lighter;
 }
 
 #resume{

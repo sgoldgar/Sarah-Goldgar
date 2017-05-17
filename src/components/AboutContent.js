@@ -13,8 +13,8 @@ class AboutContent extends Component{
   render(){
       return (
         <div id={this.props.aboutContentData.id}>
-          <p><strong>{this.props.aboutContentData.tag}</strong></p>
-          <p>{this.props.aboutContentData.description}</p>
+          <p>{this.props.aboutContentData.tag}</p>
+          <p className="skillset">{this.props.aboutContentData.description}</p>
         </div>
       )
   }

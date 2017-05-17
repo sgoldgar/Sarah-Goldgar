@@ -48,16 +48,16 @@ class About extends Component{
         <div className="flex-row experience">
           <div className="container">
             <div className="circle" onClick={() => {this.setState({currentRotate:1})}}>
-              <p>Web Dev</p>
+              <p onClick={() => {this.setState({currentRotate:1})}}>Web Dev</p>
             </div>
             <div className="circle" onClick={() => {this.setState({currentRotate:2})}}>
-              <p>Law</p>
+              <p onClick={() => {this.setState({currentRotate:2})}}>Law</p>
             </div>
             <div className="circle" onClick={() => {this.setState({currentRotate:3})}}>
-              <p>Film</p>
+              <p onClick={() => {this.setState({currentRotate:3})}}>Film</p>
             </div>
             <div className="circle" onClick={() => {this.setState({currentRotate:4})}}>
-              <p>Resume</p>
+              <p onClick={() => {this.setState({currentRotate:4})}}>Resume</p>
             </div>
           </div>
         </div>
