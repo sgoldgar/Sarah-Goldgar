@@ -9,7 +9,7 @@ import charityProject from "./img/CharityProject.png";
 import weatherapp from "./img/weatherapp.png";
 import GAcards from "./img/GAcards.png";
 import wethepeople from './img/Wethepeople.png';
-import comingSoon from "./img/coming soon.jpg";
+import pawstinFound from "./img/pawstinFound.png";
 
 //splash site images for popups
 import ClemoSplash from './img/Clemo splash.png';
@@ -19,6 +19,8 @@ import WeatherappSplash from './img/Weatherapp splash.png';
 import WethepeopleSplash from './img/Wethepeople splash.png';
 import CharityprojectSplash from './img/Charityproject splash.png';
 import GAcardSplash from './img/GAcard splash.png';
+import pawstinFoundSplash from "./img/pawstinFound splash.png";
+
 
 
 var innerPopup = {
@@ -73,11 +75,11 @@ class Projects extends Component{
           githubLink: 'https://github.com/sgoldgar/wethepeople'
         },
         {
-          title: 'COMING SOON',
+          title: 'Paw-stin Found',
           description: 'A Unity game for childen and a splash site with mini-game',
-          image: comingSoon,
-          webLink: '',
-          githubLink: ''
+          image: pawstinFoundSplash,
+          webLink: 'https://sgoldgar.github.io/Dog-Game-Site/',
+          githubLink: 'https://github.com/sgoldgar/Dog-Game-Site'
         }
       ],
       currentPopupIndex: null
@@ -122,7 +124,7 @@ class Projects extends Component{
               <img src={wethepeople} alt=""/>
             </div>
             <div className="image-link" onClick={() => {this.setState({currentPopupIndex:6})}}>
-              <img src={comingSoon} alt=""/>
+              <img src={pawstinFound} alt=""/>
             </div>
           </div>
         </div>

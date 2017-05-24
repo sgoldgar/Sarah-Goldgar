@@ -28,7 +28,7 @@ class ProjectPopup extends Component{
 
           <div className="popup">
             <div className="popup-inner" style={innerPopup}>
-              <h3>{this.props.popupData.title}</h3>
+              <h3 style={{color: 'white'}}>{this.props.popupData.title}</h3>
               <img src={this.props.popupData.image} alt=" " style={popupImage}></img>
               <p>{this.props.popupData.description}</p>
               <a target="_blank" href={this.props.popupData.webLink}>Live Site</a>
