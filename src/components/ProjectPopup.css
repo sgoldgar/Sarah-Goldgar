@@ -1,10 +1,22 @@
 /*Popups*/
+.popup-row{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+}
+
+.popup-inner img {
+  max-width: 250px;
+  max-height: 150px;
+}
+
+
 .popup{
   display: block;
   height: 400px;
   width: 400px;
-  margin: 0 34%;
-  position: fixed;
   border-radius: 50%;
 	background: rgba(47,79,79,0.95);
 	z-index: 2;
@@ -13,13 +25,6 @@
 	transition: opacity 400ms ease-in;
 };
 
-/*.popup-inner{
-  margin-top: 8%;
-}*/
-
-/*.popup-inner img{
-  width: 250px;
-}*/
 
 .popup-inner h3{
   color: white;
@@ -61,32 +66,39 @@
 @media screen
 and (min-device-width: 320px)
 and (max-device-width: 425px){
-
-  .popup{
-    margin: 0;
+  .popup-row{
+    top: 140px;
   }
+
+  .popup-inner img {
+    width: 150px;
+    height: 100px;
+  }
+
 }
 
 /*Small and Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 424px) {
+    .popup-row{
+      top: 125px;
+    }
 
     .popup{
       border-radius: 25%;
-      height: 400px;
+      height: 420px;
       width: 300px;
-      margin-left: -55px;
     }
 
     .popup-inner img {
-      width: 130px;
+      width: 150px;
       height: 100px;
     }
 
     .popup > .popup-inner{
       width: 80%;
-      margin: 10% auto;
+      margin: 0 auto;
     }
 
 }

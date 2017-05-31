@@ -1,9 +1,10 @@
 .ginnypics{
-  margin: 15% 0 0 0;
   animation: fade 1.5s;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 img{
