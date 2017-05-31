@@ -14,7 +14,7 @@ header{
 }
 
 .my-logo {
-  margin: 1em 3em;
+  margin: 5vh 3em;
   width:50%;
 }
 
@@ -27,7 +27,7 @@ header{
 }
 
 .tabs{
-
+  margin-top: 3vh;
 }
 
 nav ul {
@@ -66,10 +66,10 @@ nav ul {
   and (min-device-width: 768px)
   and (max-device-width: 1024px) {
 
-    .tabs{
-      width:45%;
-      padding-left: 5em;
-    }
+  .tabs{
+    margin-left: 3vh;
+    padding: 0;
+  }
 }
 
 /*Phones*/
@@ -96,8 +96,7 @@ and (max-device-width: 425px){
   }
 
   .tabs {
-    width: 90%;
-    padding-left: 2em;
+    margin-left: -4vh;
   }
 }
 
@@ -106,6 +105,10 @@ and (max-device-width: 425px){
   and (min-device-width: 320px)
   and (max-device-width: 424px){
 
+  nav ul{
+    padding: 0;
+  }
+
   .navigation-link{
     height: 30px;
     width: 30px;
@@ -113,8 +116,8 @@ and (max-device-width: 425px){
   }
 
   .tabs{
-    padding-left: 10em;
-    width:50%;
+    margin: 0 2vh;
+    width: 100%;
   }
 
   .navigation-link a{
