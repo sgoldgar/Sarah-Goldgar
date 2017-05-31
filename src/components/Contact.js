@@ -69,7 +69,7 @@ class Contact extends Component{
               required></textarea>
           </div>
           <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="mobile-button"/>
-            <p>3. Send away!
+            <p id="send">3. Send away!
             <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="button"/>
             </p>
         </form>

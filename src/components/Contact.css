@@ -1,6 +1,7 @@
 .contact{
   animation: fade 1.5s;
   display: flex;
+  width: 100%;
 }
 
 p{
@@ -9,8 +10,11 @@ p{
 }
 
 form {
-  margin: 10vh auto;
-  width: 50%;
+  margin: 0 auto;
+  align-content: center;
+  align-items: center;
+  max-width: 90%;
+  flex-direction: row;
   display: flex
 }
 
@@ -85,6 +89,13 @@ form .mobile-button{
 and (min-device-width: 320px)
 and (max-device-width: 425px){
 
+  #send{
+    display: none;
+  }
+  
+  form{
+    flex-direction: column;
+  }
 
   form textarea{
     width: 90%;
