@@ -1,9 +1,10 @@
 footer {
   width: 100%;
-  bottom: 0;
-  position: fixed;
-  height: 25vh;
+  /*bottom: 0;
+  position: fixed;*/
+  height: 50px;
 }
+
 
 footer h5, footer a{
   color: darkslategray;
@@ -34,9 +35,10 @@ footer li:hover{
   and (min-device-width: 768px)
   and (max-device-width: 1024px) {
 
-    footer{
+    /*footer{
       position: relative;
-    }
+      padding-top: 11em;
+    }*/
 }
 
 /*Phones*/
@@ -45,8 +47,16 @@ and (min-device-width: 320px)
 and (max-device-width: 425px) {
 
   footer{
-    position: relative;
-    padding-top: 2em;
+    padding-top: 4em;
   }
 
+
 }
+
+/*Small Phones*/
+@media only screen
+  and (max-device-width: 320px){
+    footer{
+      padding-top: 2em;
+    }
+  }

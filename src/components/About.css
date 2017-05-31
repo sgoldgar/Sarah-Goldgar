@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 
 .experience {
-  margin: 0% 0 3% 0;
   animation: fade 1.5s;
+}
+
+.content{
+  display: flex;
 }
 
 .about {
   padding: 0 10% 3% 10%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 100%;
 }
 
 .about h1 {
@@ -18,7 +26,7 @@
   display: inherit;
   justify-content: space-between;
   width: 100%;
-  margin: 0 6%;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
@@ -75,9 +83,8 @@
 /*Center Content*/
 #film, #law, #webdev, #personal-about, #resume {
   line-height: 1.6;
-  margin: 3% auto;
-  width:60%;
-  height: 10em;
+  margin: 5% auto;
+  width:80%;
   animation: fade 1.5s;
   display: flex;
   flex-direction: column;
@@ -113,21 +120,8 @@
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px){
-
     .about{
-      padding-top: 15%;
-    }
-
-    #film, #law, #webdev, #personal-about, #resume  {
-      width: 90%;
-      height: 9em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .experience {
-      margin: 9% 0;
+      height: 80vh;
     }
 
     .circle{
@@ -155,27 +149,8 @@ and (min-device-width: 320px)
 and (max-device-width: 425px){
 
   .about{
-    padding: 30% 0 0 0;
-  }
-
-  #law, #webdev, #personal-about {
-    width: 90%;
-    height: 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #film, #resume{
-    width: 90%;
-    height: 0.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .experience{
-    margin-top: 55%;
+    min-height: 110vh;
+    padding: 0;
   }
 
   .circle{
@@ -183,20 +158,30 @@ and (max-device-width: 425px){
   }
 }
 
-/*Small and Medium Phones*/
+/*Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 424px){
 
-  .about{
-    padding: 40% 0 0 0;
-  }
+    .about{
+      min-height: 150vh;
+    }
 
-  .experience {
-    margin-top: 105%;
-  }
-
-  .about .container{
-    margin-left: 20%;
-  }
+    .flex-row.experience .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 }
+
+/*Small Phones*/
+@media only screen
+  and (max-device-width: 320px){
+    .about{
+      min-height: 170vh;
+      padding: 0;
+    }
+    .container{
+      justify-content: center;
+    }
+  }

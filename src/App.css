@@ -10,7 +10,9 @@
 }
 
 .content{
-  height: 80vh;
+  min-height: calc(100vh - 70px);
+  /*height: 80vh;*/
+  display: flex;
 }
 
 body {
