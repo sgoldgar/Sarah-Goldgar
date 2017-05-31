@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
 
-.projects {
-  margin: 9% 0 0 0;
-  /*animation: fade 1.5s;*/
-}
-
 .projects .flex-row{
   animation: fade 1.5s;
 }

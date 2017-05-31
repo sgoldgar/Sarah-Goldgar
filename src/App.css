@@ -5,6 +5,12 @@
 
 .big-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  height: 75vh;
 }
 
 body {
