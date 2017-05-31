@@ -9,7 +9,7 @@ p{
 }
 
 form {
-  margin-left: 18%;
+  margin: 10vh auto;
   width: 50%;
   display: flex
 }
@@ -73,11 +73,6 @@ form .mobile-button{
   and (min-device-width: 768px)
   and (max-device-width: 1024px){
 
-    form{
-      margin-left: 6%;
-      width: 70%;
-    }
-
     .confirmation{
       left: 20em;
       top: 8em;
@@ -90,10 +85,6 @@ form .mobile-button{
 and (min-device-width: 320px)
 and (max-device-width: 425px){
 
-  form{
-    display: block;
-    margin: 5% auto;
-  }
 
   form textarea{
     width: 90%;

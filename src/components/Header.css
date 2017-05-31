@@ -2,19 +2,23 @@
 header{
   background-color: #FFF5B0;
   display:flex;
-  width:100%;
   flex-direction: row;
-  margin-top: -1em;
-  margin-left: -1em;
+  margin-left: -1%;
+  margin-top: -1%;
+  width: 100vw;
   padding: .5em 1em .5em .5em;
-  height: 25vh;
+  max-height: 20vh;
   z-index: 1;
-  top: 0;
-  right: 0;
+}
+
+#header-row{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }
 
 .my-logo {
-  margin: 5vh 3em;
+  margin: 10px 40px;
   width:50%;
 }
 
@@ -26,9 +30,6 @@ header{
   border: 5px solid darkslategray;
 }
 
-.tabs{
-  margin-top: 3vh;
-}
 
 nav ul {
   display: flex;
@@ -66,10 +67,7 @@ nav ul {
   and (min-device-width: 768px)
   and (max-device-width: 1024px) {
 
-  .tabs{
-    margin-left: 3vh;
-    padding: 0;
-  }
+
 }
 
 /*Phones*/
@@ -91,19 +89,34 @@ and (max-device-width: 425px){
     font-size: 85%;
   }
 
+  header{
+    margin-left: -2%;
+  }
+
+  nav ul{
+    padding-left: 0;
+  }
+
+  .tabs {
+    margin: 0 auto;
+  }
+
   ul li:nth-child(3n) a, ul li:nth-child(5n) a{
     margin-left: -5px;
   }
 
-  .tabs {
-    margin-left: -4vh;
-  }
+
 }
 
 /*Small and Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 424px){
+
+  header{
+    margin-top: -3%;
+    margin-left: -3%;
+  }
 
   nav ul{
     padding: 0;
@@ -115,10 +128,6 @@ and (max-device-width: 425px){
     padding: 13px;
   }
 
-  .tabs{
-    margin: 0 2vh;
-    width: 100%;
-  }
 
   .navigation-link a{
     font-size: 70%;
@@ -126,10 +135,6 @@ and (max-device-width: 425px){
 
   ul li:nth-child(3n) a, ul li:nth-child(5n) a{
     margin-left: -5px;
-  }
-
-  header{
-    height: 6em;
   }
 
 }
