@@ -13,7 +13,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  min-height: 70vh;
   width: 100%;
 }
 
@@ -25,7 +25,7 @@
   flex-direction: row;
   display: inherit;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -54,7 +54,7 @@
   border-radius: 50%;
   width: 120px;
   min-height: 120px;
-  margin: 0px 50px;
+  margin: 10px 50px;
   background-color: darkslategray;
 }
 
@@ -84,11 +84,13 @@
 #film, #law, #webdev, #personal-about, #resume {
   line-height: 1.6;
   margin: 5% auto;
+  min-height: 15em;
   width:80%;
   animation: fade 1.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 30em;
 }
 
 .skillset{

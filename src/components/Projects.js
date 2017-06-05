@@ -22,11 +22,6 @@ import GAcardSplash from './img/GAcard splash.png';
 import pawstinFoundSplash from "./img/pawstinFound splash.png";
 
 
-
-var innerPopup = {
-  marginTop: '10%',
-};
-
 class Projects extends Component{
   constructor(props){
     super(props)
