@@ -1,6 +1,10 @@
 .contact{
   animation: fade 1.5s;
+  padding: 0 10% 3% 10%;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
+  min-height: 70vh;
   width: 100%;
 }
 
@@ -10,12 +14,9 @@ p{
 }
 
 form {
-  margin: 0 auto;
-  align-content: center;
-  align-items: center;
-  max-width: 90%;
-  flex-direction: row;
-  display: flex
+  margin: 30px 100px 30px 60px;
+  max-width: 100%;
+  display: flex;
 }
 
 form input, form textarea {
@@ -56,14 +57,11 @@ form .mobile-button{
 
 .confirmation{
   border: 1px solid darkslategray;
+  background: white;
   padding: 1em;
   width: 10em;
+  box-shadow: 2px 3px 1px 1px darkslategray;
   margin: 0 auto;
-  z-index: 1;
-  position: absolute;
-  left: 34em;
-  top: 9em;
-  box-shadow: 1px 1px 1px 1px darkslategray;
 }
 
 /*animations*/
@@ -81,6 +79,14 @@ form .mobile-button{
       left: 20em;
       top: 8em;
     }
+
+    form{
+      margin: 30px 30px 30px 40px;
+    }
+
+    .contact{
+      padding: 0;
+    }
 }
 
 
@@ -92,9 +98,10 @@ and (max-device-width: 425px){
   #send{
     display: none;
   }
-  
+
   form{
     flex-direction: column;
+    margin: 30px auto;
   }
 
   form textarea{
@@ -116,6 +123,10 @@ and (max-device-width: 425px){
     display: block;
   }
 
+  .contact{
+    padding: 0;
+  }
+
   .button{
     display: none;
   }
@@ -129,13 +140,6 @@ and (max-device-width: 425px){
     display: block;
   }
 
-  .confirmation {
-    left: 7.5em;
-    top: 7em;
-    border: none;
-    box-shadow: 0 0;
-    text-decoration: underline;
-  }
 }
 
 /*Small and Medium Phones*/
@@ -145,18 +149,16 @@ and (max-device-width: 425px){
 
   form{
     width:80%;
+    margin: 30px auto;
   }
 
   form .mobile-button{
     display: block;
   }
 
-  .confirmation {
-    left: 4em;
-    top: 5.5em;
-    border: none;
-    box-shadow: 0 0;
-    text-decoration: underline;
+  .contact{
+    padding: 0;
   }
+
 
 }

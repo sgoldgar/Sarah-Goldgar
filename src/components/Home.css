@@ -317,6 +317,10 @@
   and (min-device-width: 320px)
   and (max-device-width: 424px){
 
+  .home{
+    width: 100%;
+  }
+
   #welcome-text{
     margin: 85% 0 0 0;
     font-size: 400%;

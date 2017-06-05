@@ -38,6 +38,9 @@ class Contact extends Component{
   render(){
     return(
       <section className="contact">
+        {this.state.messageShown ?
+        <p className="confirmation" >Message sent!</p>
+        : 
         <form className="form"  action="https://formspree.io/sgoldgar@gmail.com" method="POST" role="form">
           <p id="contact-title">Get in touch</p>
           <div>
@@ -70,13 +73,12 @@ class Contact extends Component{
           </div>
           <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="mobile-button"/>
             <p id="send">3. Send away!
-            <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="button"/>
+
+              <input onClick={this.sendEmail.bind(this)} type="submit" value="Get in touch" className="button"/>
+
             </p>
         </form>
-        {this.state.messageShown ?
-        <p className="confirmation" >Message sent!</p>
-        : null
-        }
+      }
       </section>
 
     )

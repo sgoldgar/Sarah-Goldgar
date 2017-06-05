@@ -54,7 +54,7 @@
   border-radius: 50%;
   width: 120px;
   min-height: 120px;
-  margin: 10px 50px;
+  margin: 0px 50px 10px 50px;
   background-color: darkslategray;
 }
 
@@ -83,7 +83,7 @@
 /*Center Content*/
 #film, #law, #webdev, #personal-about, #resume {
   line-height: 1.6;
-  margin: 5% auto;
+  margin: 15px auto;
   min-height: 15em;
   width:80%;
   animation: fade 1.5s;
@@ -122,8 +122,13 @@
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px){
-    .about{
-      height: 80vh;
+
+    .projects{
+      width: 100%;
+    }
+
+    .popup-row{
+      width: 100%;
     }
 
     .circle{
