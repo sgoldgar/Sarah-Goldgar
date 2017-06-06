@@ -101,7 +101,7 @@ and (max-device-width: 425px){
     margin: 0 auto;
   }
 
-  ul li:nth-child(3n) a, ul li:nth-child(5n) a{
+  .tabs li:nth-child(3n) a, ul li:nth-child(5n) a{
     margin-left: -5px;
   }
 
@@ -133,7 +133,7 @@ and (max-device-width: 425px){
     font-size: 70%;
   }
 
-  ul li:nth-child(3n) a, ul li:nth-child(5n) a{
+  .tabs li:nth-child(3n) a, ul li:nth-child(5n) a{
     margin-left: -5px;
   }
 

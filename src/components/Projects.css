@@ -79,29 +79,38 @@ and (max-device-width: 425px){
 
   .flex-row .container{
     margin: 30px;
+    justify-content: center;
+
   }
 
   .image-link img{
-    margin: 10px 0px;
+    margin: 20px 0px;
   }
 
   .container.offset{
     margin: 0 6%;
   }
+
 }
 
 /*Small and Medium Phones*/
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 424px) {
+  and (max-device-width: 425px) {
 
     .projects{
       min-height: 250vh;
+      margin: 0 auto;
     }
 
     .container.offset{
       display: flex;
       flex-direction: row;
+      justify-content: center;
+    }
+
+    .flex-row .container{
+      margin: 30px;
       justify-content: center;
     }
 }
