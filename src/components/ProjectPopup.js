@@ -20,7 +20,7 @@ class ProjectPopup extends Component{
           <div className="popup-row">
             <div className="popup">
               <div className="popup-inner">
-                <div className="popup-content">
+                <div id="popup-content">
                   <h3 style={{color: 'white'}}>{this.props.popupData.title}</h3>
                   <img src={this.props.popupData.image} alt=" "></img>
                   <p>{this.props.popupData.description}</p>
