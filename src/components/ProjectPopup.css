@@ -25,7 +25,8 @@
 	transition: opacity 400ms ease-in;
 };
 
-div#popup-content{
+/*react is not recognizing this style, inline style is being used for now*/
+div.popup-content{
   display: flex;
   flex-direction: column;
   align-items: center;
