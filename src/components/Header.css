@@ -1,6 +1,6 @@
 /* Nav Bar and Header */
 header{
-  background-color: #FFF5B0;
+  background-color: #EDE7EA;
   display:flex;
   flex-direction: row;
   margin-left: -1%;
@@ -44,7 +44,7 @@ nav ul {
   margin: 0 1vw;
   display: flex;
   padding:15px;
-  background-color: darkslategray;
+  background-color: #819681;
 }
 
 .navigation-link a {

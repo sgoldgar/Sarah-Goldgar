@@ -55,7 +55,7 @@
   width: 120px;
   min-height: 120px;
   margin: 0px 50px 10px 50px;
-  background-color: darkslategray;
+  background-color: #A6C8E3;
 }
 
 .circle p {
@@ -63,10 +63,12 @@
  top: 32px;
  left: 0;
  width: 100%;
- color: #F5F1ED;
+ color: white;
  font-size: 110%;
  letter-spacing: 1.2px;
  font-weight: lighter;
+ font-weight: normal;
+ text-shadow: 1px 1px slategrey;
 }
 
 
